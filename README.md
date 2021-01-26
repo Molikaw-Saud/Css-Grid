@@ -17,7 +17,7 @@
 
 
 ## Overview
-![screenshot] <img src="" alt="Dome">
+![screenshot] <img src="Screenshot from 2021-01-26 11-18-08.png" alt="Dome">
 
 
 
