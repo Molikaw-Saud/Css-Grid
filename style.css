@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    padding: 0;
+    margin: 20px;
+}
+/* Grid layout for header */
+.container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+/* header */
+header {
+    grid-column: 4 / 10;
+    text-align: center;
+    margin: auto 0;
+}
+.text-log {
+    color: #666666;
+    text-transform: uppercase;
+    font-size: 2.25rem;
+    font-weight: bolder;
+    letter-spacing: 3px;
+    line-height: 1.5;
+    margin-bottom: .8rem;
+}
+header p {
+    font-size: 0.9rem;
+    color: #666666;
+    font-weight: bolder;
+    margin-bottom: .8rem;
+}
+header button {
+    padding: 8px 16px;
+    margin-top: .9rem;
+    background-color: #666666;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+header button:hover {
+    background-color: #a09090;
+}
+header a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 2px;
+}
+/* Gird layout for main section */
+.grid-layout .grid-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 2px;
+    filter: brightness(0.5) grayscale(100);
+    transition: 0.3s ease-in-out;
+}
+.grid-layout .grid-item:hover img {
+    filter: brightness(1) grayscale(0);
+}
+.grid-layout {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-rows: repeat(5, 200px);
+    grid-auto-flow: dense;
+    grid-gap: 10px;
+}
+.w-1 {
+    grid-column: span 2;
+}
+.h-1 {
+    grid-row: span 2;
+}
+.w-2 {
+    grid-column: span 1;
+}
+.h-2 {
+    grid-row: span 1;
+}
+.h-3 {
+    grid-row: span 3;
+}
+
+@media (max-width: 700px) {
+    .grid-layout {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
